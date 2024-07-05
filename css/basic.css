@@ -1,0 +1,47 @@
+:root {
+    --fontSizeTitle: "Libre Baskerville", serif;
+    --fontSizeText: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    padding: 0 18px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: var(--fontSizeTitle);
+    font-weight: 400;
+   
+}
+
+.btn {
+    padding: 20px 40px;
+    font-family: var(--fontSizeText);
+    font-weight: 700;
+    font-size: clamp(0.75rem, 0.719rem + 0.143vi, 0.875rem);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+}
