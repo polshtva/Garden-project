@@ -22,6 +22,7 @@ a {
 
 ul li {
     list-style: none;
+    margin: 0;
 }
 
 .container {
@@ -43,5 +44,10 @@ ul li {
     font-size: clamp(0.75rem, 0.719rem + 0.143vi, 0.875rem);
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
 
+.btn:hover{
+    transform: scale(1.1);
 }

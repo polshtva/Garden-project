@@ -8,10 +8,15 @@
     align-items: center;
 }
 
-.logo {
+.logo a{
     display: flex;
     column-gap: 14px;
     align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.logo a:hover{
+    transform: scale(1.1);
 }
 
 .logo__info {

@@ -9,7 +9,7 @@
 
 }
 .news__main-title {
-    font-size: 45px;
+    font-size: clamp(2.125rem, 1.972rem + 0.701vi, 2.813rem);
     line-height: 110%;
     text-transform: capitalize;
     color: #343D33;
@@ -43,4 +43,104 @@
     background-image: url(../../img/news/arrow-right.png);
     display: inline-block;
     margin-left: 12px;
+}
+
+
+
+.news__desc {
+    display: flex;
+    align-items: start;
+    margin-top: 48px;
+}
+.news__main {
+    max-width: 40%;
+}
+.news__info {
+}
+
+.news__main .news__title{
+    margin-top: 20px;
+}
+
+.news__title {
+    font-family: var(--fontSizeTitle);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 110%;
+    color: #475F45;
+}
+.news__text {
+    font-family: var(--fontSizeText);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #414840;
+    margin-top: 12px;
+}
+.news__data {
+    font-family: var(--fontSizeText);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343D33;
+    margin-top: 12px;
+}
+.news__list {
+}
+.news__item {
+    margin-top: 20px;
+    display: flex;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid #C4C4C4;
+    column-gap: 20px;
+}
+
+.news__item:last-child{
+    border: none;
+}
+
+.news__item:first-child{
+    margin-top: -17px;
+    padding-top: 0;
+}
+
+
+@media (max-width:980px) {
+    .news__desc {
+        flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: start;
+    }
+    .news__main{
+        display: flex;
+        max-width: 100%;
+        column-gap: 24px;
+    }
+    .news__list {
+        padding: 0;
+    }
+}
+
+@media (max-width:740px){
+    .news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .news__main {
+       flex-direction: column;
+       text-align: center;
+    }
+
+    .news__item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .news__list .news__title{
+        margin-top: 20px;
+    }
 }
